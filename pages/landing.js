@@ -3,10 +3,7 @@ import Header from "@/components/Header";
 import LandingBanner from "@/components/LandingBanner";
 import BrandsSlider from "@/components/BrandsSlider";
 import AppleProducts from "@/components/AppleProducts";
-import Mobile from "@/components/Mobile";
-import Computing from "@/components/Computing";
-import Camera from "@/components/Camera";
-import Accessories from "@/components/Accessories";
+import Categories from "@/components/Categories";
 import IconBar from "@/components/IconBar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -38,10 +35,7 @@ export default function LandingPage() {
       <LatestOffers/>
       <BrandsSlider/>
       <AppleProducts/>
-      <Mobile/>
-      <Computing/>
-      <Camera/>
-      <Accessories/>
+      <Categories/>
       <IconBar/>
       <Footer/>
 
