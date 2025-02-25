@@ -118,6 +118,7 @@ const AppleProducts = () => {
 >
   SHOP NOW
 </button>
+<br/><br/><br/>
       </div>
     </div>
   );
