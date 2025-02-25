@@ -8,7 +8,7 @@ import Accessories from './Accessories';
 
 const Categories = () => {
   return (
-    <div style={{ backgroundColor: '#f6f6f6', padding: '20px' }}>
+    <div style={{ backgroundColor: '#f0f0f0', padding: '20px' }}>
       <Mobile />
       <Computing />
       <Camera />
