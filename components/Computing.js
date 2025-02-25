@@ -2,75 +2,146 @@
 
 import React from 'react';
 import Image from 'next/image';
+import LatestOffersCard from './LatestOffersCard'; // Import LatestOffersCard
 
 const Computing = () => {
+
+  // Sample product data (replace with your actual data)
+  const product1 = {
+    image: "/images/macbook15.png",
+    title: "IPHONE 15 PRO",
+    brand: "Iphone",
+    oldPrice: "300,000",
+    newPrice: "250,000",
+    rating: 4.3,
+    reviews: 187,
+    offerEnd: "25th of August",
+    Id: "iphone-15-pro" // Example ID for linking
+  };
+
+  const product2 = {
+    image: "/images/macbook15.png",
+    title: "IPHONE 15 PRO",
+    brand: "Iphone",
+    oldPrice: "300,000",
+    newPrice: "250,000",
+    rating: 4.3,
+    reviews: 187,
+    offerEnd: "25th of August",
+    Id: "iphone-15-pro-2" // Example ID for linking
+  };
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
+    <div className='-mt-4'
+    style={{ display: 'flex', justifyContent: 'space-between',gap:"0px", padding: '1.0999px', maxWidth: '1215px', marginLeft: "130px" }}>
       {/* Left Section */}
-      <div style={{ width: '400px', border: '1px solid #ddd', borderRadius: '8px', padding: '20px', textAlign: 'center' }}>
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-          <Image src="/images/laptop-icon.png" alt="Laptop Icon" width={30} height={30} />
+      <div className='mt-6'
+      style={{ 
+        width: '735px', 
+        height:"844.5px",
+        backgroundColor: '#FEFEFF', // Updated background color
+        padding: '60px', // Adjusted padding
+        borderRadius: '8px', 
+        marginLeft:"-30px"
+      }}>
+        <div className='mt-20'
+        style={{ 
+          display: 'flex', 
+          justifyContent: 'center', 
+          marginBottom: '10px',
+          }}
+          >
+          <Image src="/images/macbook.png" alt="Mobile Icon" width={106} height={64.8} /> {/* Adjusted height */}
         </div>
-        <h2 style={{ marginBottom: '20px' }}>COMPUTING</h2>
-        <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '20px' }}>
-          <Image src="/images/apple-logo.png" alt="Apple Logo" width={50} height={50} />
-          <Image src="/images/dell-logo.png" alt="Dell Logo" width={50} height={50} />
-          <Image src="/images/msi-logo.png" alt="MSI Logo" width={50} height={50} />
+      
+        <h2 
+        style={{
+          height: "50px",
+          fontFamily: "Kanit",
+          fontWeight: 400,
+          fontSize: "42px",
+          lineHeight: "50.4px",
+          letterSpacing: "10%",
+          color: "#434250",
+          textAlign: "center"
+        }}
+      >
+        COMPUTING
+      </h2>
+       
+        <div className='mt-16'
+        style={{ 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          marginBottom: '90px', 
+          padding: '0 20px', // Added padding
+          borderTop: '2px solid #434250', // Added top border
+          borderBottom: '2px solid #434250', // Added bottom border
+          paddingTop: '30px', // Added top padding
+          paddingBottom: '30px' // Added bottom padding
+        }}>
+
+<div style={{ display: 'flex', marginLeft:'50px', gap: '80px' }}> {/* Reduced gap */}
+  <Image src="/images/apple-logo.png" alt="Apple Logo" width={35} height={40} />
+  <Image src="/images/dell-logo.png" alt="Dell Logo" width={84.44} height={26.35} />
+  <Image src="/images/msi-logo.png" alt="MSI Logo" width={82.22} height={21} />
+</div>
         </div>
-        <p style={{ marginBottom: '20px' }}>Discover The Latest In Mobile Technology! 100% Genuine Products.</p>
-        <button style={{ padding: '10px 20px', backgroundColor: 'transparent', border: '1px solid #666', borderRadius: '5px', cursor: 'pointer' }}>SHOP NOW</button>
+
+        
+        <p className='-mt-4'
+        style={{
+          height: "56px",
+          fontFamily: "Kanit",
+          fontWeight: 400,
+          fontSize: "23px",
+          lineHeight: "27.6px",
+          letterSpacing: "10%",
+          color: "#434250",
+          textAlign: "center"
+        }}
+      >
+      Discover The Latest In Mobile Technology!<br/>
+      100% Genuine Products.
+      </p>
+      
+      <button className='mt-16'
+        style={{
+          width: "241px", // Updated width
+          height: "56px", // Updated height
+          fontFamily: "Kanit",
+          fontWeight: 400,
+          fontSize: "20px",
+          lineHeight: "24px",
+          letterSpacing: "10%",
+          border: " 1.5px solid #434250",
+          textAlign: "center",
+          backgroundColor: "#FEFEFF",
+          paddingTop: "16px",
+          paddingRight: "64px",
+          paddingBottom: "16px",
+          paddingLeft: "64px",
+          gap: "10px",
+          marginLeft:"120px",
+          cursor: "pointer"
+        }}
+      >
+        SHOP NOW
+      </button>
+      
       </div>
 
+      <div className='-mt-5'
+    style={{ display: 'flex', justifyContent: 'space-between', padding:'20px', maxWidth: '1310px', marginRight:'-70px'}}>
       {/* Product Cards Container */}
-      <div style={{ display: 'flex', gap: '20px' }}>
-        {/* Product Card 1 */}
-        <div style={{ width: '300px', border: '1px solid #ddd', borderRadius: '8px', overflow: 'hidden' }}>
-          <Image src="/images/macbook-air.png" alt="MacBook Air" width={300} height={350} />
-          <div style={{ padding: '20px' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-              {[...Array(5)].map((_, i) => (
-                <span key={i} style={{ color: '#ffc107', fontSize: '1.2em' }}>★</span>
-              ))}
+            <div style={{ display: 'flex', gap: '15px' }}>
+              {/* Product Card 1 */}
+              <LatestOffersCard product={product1} />
+      
+              {/* Product Card 2 */}
+              <LatestOffersCard product={product2} />
             </div>
-            <p style={{ textAlign: 'center', fontSize: '0.9em', color: '#666', marginBottom: '10px' }}>4.3 | 187 Reviews</p>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-              <Image src="/images/cart-icon.png" alt="Cart Icon" width={20} height={20} />
             </div>
-            <h3 style={{ textAlign: 'center', marginBottom: '5px' }}>IPHONE 15 PRO</h3>
-            <p style={{ textAlign: 'center', marginBottom: '10px' }}>Iphone</p>
-            <p style={{ textAlign: 'center', textDecoration: 'line-through', color: '#999' }}>300,000 LKR</p>
-            <p style={{ textAlign: 'center', fontWeight: 'bold' }}>250,000 LKR</p>
-            <p style={{ textAlign: 'center', fontSize: '0.8em', color: '#666', marginTop: '10px' }}>Offers Valid Till 25th of August</p>
-            <div style={{ textAlign: 'center', marginTop: '15px' }}>
-              <button style={{ padding: '10px 20px', backgroundColor: '#6750A4', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>BUY NOW</button>
-            </div>
-          </div>
-        </div>
-
-        {/* Product Card 2 (Duplicate of Product Card 1) */}
-        <div style={{ width: '300px', border: '1px solid #ddd', borderRadius: '8px', overflow: 'hidden' }}>
-          <Image src="/images/macbook-air.png" alt="MacBook Air" width={300} height={350} />
-          <div style={{ padding: '20px' }}>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-              {[...Array(5)].map((_, i) => (
-                <span key={i} style={{ color: '#ffc107', fontSize: '1.2em' }}>★</span>
-              ))}
-            </div>
-            <p style={{ textAlign: 'center', fontSize: '0.9em', color: '#666', marginBottom: '10px' }}>4.3 | 187 Reviews</p>
-            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }}>
-              <Image src="/images/cart-icon.png" alt="Cart Icon" width={20} height={20} />
-            </div>
-            <h3 style={{ textAlign: 'center', marginBottom: '5px' }}>IPHONE 15 PRO</h3>
-            <p style={{ textAlign: 'center', marginBottom: '10px' }}>Iphone</p>
-            <p style={{ textAlign: 'center', textDecoration: 'line-through', color: '#999' }}>300,000 LKR</p>
-            <p style={{ textAlign: 'center', fontWeight: 'bold' }}>250,000 LKR</p>
-            <p style={{ textAlign: 'center', fontSize: '0.8em', color: '#666', marginTop: '10px' }}>Offers Valid Till 25th of August</p>
-            <div style={{ textAlign: 'center', marginTop: '15px' }}>
-              <button style={{ padding: '10px 20px', backgroundColor: '#6750A4', color: 'white', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>BUY NOW</button>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
