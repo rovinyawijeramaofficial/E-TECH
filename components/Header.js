@@ -22,7 +22,7 @@ export default function Header() {
     lineHeight: '27.6px', 
     letterSpacing: '10%', 
     color: '#434250',
-    marginLeft:"20px",
+    marginLeft:"45px",
   }}
 >
   E TECH
