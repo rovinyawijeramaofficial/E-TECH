@@ -157,7 +157,7 @@ export default function LatestOffers() {
     </button>
   ))}
 </div>
-
+<br/>
       </div>
     </section>
   );
