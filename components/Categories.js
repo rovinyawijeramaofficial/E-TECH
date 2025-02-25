@@ -13,6 +13,7 @@ const Categories = () => {
       <Computing />
       <Camera />
       <Accessories />
+      <br/><br/> 
     </div>
   );
 };
