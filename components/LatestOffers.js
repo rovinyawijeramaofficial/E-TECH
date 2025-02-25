@@ -3,7 +3,7 @@ import LatestOffersCard from "./LatestOffersCard";
 
 const products = [
   {
-    image: "/images/iphone-15.png",
+    image: "/images/iphone_15.png",
     title: "IPHONE 15 PRO",
     brand: "Iphone",
     oldPrice: "300,000",
