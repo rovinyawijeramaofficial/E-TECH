@@ -121,8 +121,10 @@ const Computing = () => {
               {/* Product Card 2 */}
               <LatestOffersCard product={product2} />
             </div>
-            </div>
+            </div>  
+              
     </div>
+     
   );
 };
 
