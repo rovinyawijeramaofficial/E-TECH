@@ -59,8 +59,8 @@ export default function LatestOffers() {
         {/* Swiper with Navigation & Pagination */}
         <div className="relative w-full overflow-visible">
           {/* Left Arrow */}
-          <button ref={prevRef} className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full shadow-md hover:scale-110 transition"
-            style={{ width: "40px", height: "40px" }}>
+          <button ref={prevRef} className="absolute left-[-50px] top-1/2 transform -translate-y-1/2 z-10 hover:scale-110 transition"
+            style={{ width: "15px", height: "30px" }}>
             <img src="/images/offerscardleftarrow.png" alt="Previous" className="w-full h-full" />
           </button>
 
@@ -90,40 +90,41 @@ export default function LatestOffers() {
           </Swiper>
 
           {/* Right Arrow */}
-          <button ref={nextRef} className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 z-10 bg-white rounded-full shadow-md hover:scale-110 transition"
-            style={{ width: "40px", height: "40px" }}>
+          <button ref={nextRef} className="absolute right-[-50px] top-1/2 transform -translate-y-1/2 z-10 hover:scale-110 transition"
+            style={{ width: "15px", height: "30px" }}>
             <img src="/images/offerscardrightarrow.png" alt="Next" className="w-full h-full" />
           </button>
         </div>
 
         {/* Pagination Below Swiper */}
-        <div className="flex justify-center items-center mt-8 space-x-2">
-          {["<", 1, 2, 3, "...", 7, ">"].map((item, index) => (
-            <button key={index}
-            style={{
-              fontFamily: "Kanit",
-              fontWeight: 400,
-              fontSize: "23px",
-              lineHeight: "27.6px",
-              padding: "5px 10px",
-              borderRadius: "4px",
-              color: item === "1" ? "#989EF1" : "#434250",
-              border: "none",
-              cursor: "pointer",
-              fontSize: "1rem",
-            }}
-              className={`px-3 py-2 text-lg font-medium rounded-md ${
-                item === activePage ? "font-[#989EF1]" : "text-gray-700"
-              } hover:bg-gray-200`}
-              onClick={() => {
-                if (item === "<" && activePage > 1) goToPage(activePage - 1);
-                else if (item === ">" && activePage < 7) goToPage(activePage + 1);
-                else if (typeof item === "number") goToPage(item);
-              }}>
-              {item}
-            </button>
-          ))}
-        </div>
+<div className="flex justify-center items-center mt-8 -space-x-2">
+  {["<", 1, 2, 3, "...", 7, ">"].map((item, index) => (
+    <button
+      key={index}
+      style={{
+        fontFamily: "Kanit",
+        fontWeight: 400,
+        fontSize: "23px",
+        lineHeight: "27.6px",
+        padding: "5px 10px",
+        borderRadius: "4px",
+        color: item === activePage ? "#989EF1" : "#434250",
+        border: "none",
+        cursor: "pointer",
+        background: "transparent",
+      }}
+      className={`hover:bg-gray-200 transition`}
+      onClick={() => {
+        if (item === "<" && activePage > 1) goToPage(activePage - 1);
+        else if (item === ">" && activePage < 7) goToPage(activePage + 1);
+        else if (typeof item === "number") goToPage(item);
+      }}
+    >
+      {item}
+    </button>
+  ))}
+</div>
+
       </div>
     </section>
   );
