@@ -33,7 +33,7 @@ const Mobile = () => {
 
   return (
     <div 
-    style={{ display: 'flex', justifyContent: 'space-between', padding:'10px', maxWidth: '1280px', marginLeft: "100px" }}>
+    style={{ display: 'flex', justifyContent: 'space-between', padding:'10px', maxWidth: '1310px', marginLeft: "90px" }}>
       {/* Product Cards Container */}
       <div style={{ display: 'flex', gap: '15px' }}>
         {/* Product Card 1 */}
@@ -91,11 +91,14 @@ style={{
     paddingTop: '30px', // Added top padding
     paddingBottom: '30px' // Added bottom padding
   }}>
+
+    <div style={{ display: 'flex', marginLeft:'30px', gap: '70px' }}> {/* Reduced gap */}
     <Image src="/images/apple-logo.png" alt="Apple Logo" width={35} height={40} /> {/* Adjusted sizes */}
     <Image src="/images/samsung-logo.png" alt="Samsung Logo" width={131} height={20} />
     <Image src="/images/sony-logo.png" alt="Sony Logo" width={116} height={20} />
   </div>
-  
+  </div>
+
   <p className='-mt-4'
   style={{
     height: "56px",
