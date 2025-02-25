@@ -49,11 +49,44 @@ export default function LatestOffers() {
       <div className="container mx-auto px-10 md:px-28 mt-12 relative">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-semibold text-gray-800">LATEST OFFERS</h2>
-          <a href="/offers" className="text-lg font-medium text-gray-700 flex items-center">
-            SEE ALL OFFERS
-            <img src="/images/seealloffersarrrow.png" alt="See All Offers Arrow" className="ml-2 w-3 h-3" />
-          </a>
+        <h2 
+  style={{
+    width: "192px",
+    height: "28px",
+    fontFamily: "Kanit",
+    fontWeight: 600,
+    fontSize: "23px",
+    lineHeight: "27.6px",
+    letterSpacing: "10%",
+    color: "#434250"
+  }}
+>
+  LATEST OFFERS
+</h2>
+
+<a 
+  href="/product" 
+  style={{
+    width: "156px",
+    height: "22px",
+    fontFamily: "Kanit",
+    fontWeight: 400,
+    fontSize: "18px",
+    lineHeight: "21.6px",
+    letterSpacing: "10%",
+    color: "#434250",
+    textDecoration: "none",
+    display: "inline-flex", // Use inline-flex for easy alignment
+    alignItems: "center" // Vertically align items
+  }}
+>
+  SEE ALL OFFERS
+  <img 
+    src="/images/seealloffersarrrow.png" 
+    alt="See All Offers Arrow" 
+    style={{ marginLeft: "5px" }} // Add some spacing between text and arrow
+  />
+</a>
         </div>
 
         {/* Swiper with Navigation & Pagination */}
@@ -97,7 +130,7 @@ export default function LatestOffers() {
         </div>
 
         {/* Pagination Below Swiper */}
-<div className="flex justify-center items-center mt-8 -space-x-2">
+<div className="flex justify-center items-center mt-3 -space-x-2">
   {["<", 1, 2, 3, "...", 7, ">"].map((item, index) => (
     <button
       key={index}
