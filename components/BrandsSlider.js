@@ -1,17 +1,30 @@
 import React from "react";
 
 const brands = [
-  { name: "Apple", logo: "/images/apple-logo.svg" },
-  { name: "Samsung", logo: "/images/samsung-logo.svg" },
-  { name: "Dell", logo: "/images/dell-logo.svg" },
-  { name: "Nokia", logo: "/images/nokia-logo.svg" },
-  { name: "Sony", logo: "/images/sony-logo.svg" },
+  { name: "Apple", logo: "/images/brand1.png" },
+  { name: "Samsung", logo: "/images/brand2.png" },
+  { name: "Dell", logo: "/images/brand3.png" },
+  { name: "Nokia", logo: "/images/brand4.png" },
+  { name: "Sony", logo: "/images/brand5.png" },
 ];
 
 export default function BrandsSlider() {
   return (
-    <div className="bg-purple-400 py-6 overflow-hidden">
-      <div className="animate-marquee flex space-x-12 items-center">
+    <div
+  style={{
+    width: "1728px",
+    height: "160px",
+    marginTop: "7.5px",
+    display: "flex",
+    justifyContent: "space-between",
+    paddingTop: "60px",
+    paddingRight: "120px",
+    paddingBottom: "60px",
+    paddingLeft: "120px",
+    backgroundColor: "#989EF1"
+  }}
+>
+      <div className="animate-marquee flex space-x-24 items-center">
         {brands.map((brand, index) => (
           <img
             key={index}
