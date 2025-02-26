@@ -18,7 +18,7 @@ const SingleProduct = () => {
   const product = {
     name: "Apple iPhone 14 Pro Max",
     price: "Rs. 259,999",
-    image: "/images/image2.png",
+    image: "/images/iphone14pro.png",
     description:
       "The iPhone 14 Pro Max offers cutting-edge performance, an advanced camera system, and long battery life, perfect for users who demand the best.",
     category: "Electronics",
@@ -32,25 +32,25 @@ const SingleProduct = () => {
       id: 1,
       name: "Apple iPhone 14 Pro",
       price: "Rs. 199,999",
-      image: "/images/iphone14pro.png",
+      image: "/images/iphone_15.png",
     },
     {
       id: 2,
       name: "Samsung Galaxy S21",
       price: "Rs. 129,999",
-      image: "/images/galaxys21.png",
+      image: "/images/iphone_15.png",
     },
     {
       id: 3,
       name: "Google Pixel 6",
       price: "Rs. 109,999",
-      image: "/images/pixel6.png",
+      image: "/images/iphone_15.png",
     },
     {
       id: 4,
       name: "OnePlus 9 Pro",
       price: "Rs. 119,999",
-      image: "/images/oneplus9.png",
+      image: "/images/iphone_15.png",
     },
   ];
 
