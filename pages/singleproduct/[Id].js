@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SingleProductLatestOffers from "@/components/SingleProductLatestOffers";
+import SingleProductRecommendedProducts from "@/components/SingleProductRecommendedProducts";
 import Link from "next/link";
 
 const SingleProduct = () => {
@@ -177,32 +179,12 @@ const SingleProduct = () => {
 
         {/* Related Products */}
         <div className="mt-16">
-          <h2 className="text-2xl font-bold mb-4">Related Products</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {relatedProducts.map((product) => (
-              <div
-                key={product.id}
-                className="border rounded-lg p-4 flex flex-col items-center text-center"
-              >
-                <Image
-                  src={product.image}
-                  alt={product.name}
-                  width={150}
-                  height={150}
-                  className="mb-4"
-                />
-                <h3 className="font-semibold mb-2">{product.name}</h3>
-                <p className="text-xl font-bold">{product.price}</p>
-                <Link href={`/product/${product.id}`} passHref>
-                  <button className="bg-black text-white px-4 py-2 rounded-lg mt-2">
-                    View Product
-                  </button>
-                </Link>
-              </div>
-            ))}
-          </div>
+        
+        <SingleProductRecommendedProducts/>
         </div>
       </div>
+
+      <SingleProductLatestOffers/>
       <Footer />
     </>
   );
