@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const IconBar = () => {
   return (
@@ -23,6 +24,7 @@ const IconBar = () => {
       style={{ display: 'flex', gap: '140px', maxWidth: '1725px', width: '100%',  justifyContent: 'center' }}>
         
         {/* Extended Protection */}
+        <Link href="/contact-us">  
         <div style={{ marginLeft: '250px' }}>
         <div style={{ textAlign: 'center', maxWidth: '202px' }}>
           <Image src="/images/shield-icon.png" alt="Extended Protection" width={31.25} height={39.46} />
@@ -62,8 +64,10 @@ free product protection.
 </p>
         </div>
         </div>
+        </Link>
 
         {/* Money-back */}
+        <Link href="/contact-us">  
         <div style={{ marginLeft: '10px' }}>
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/money-back-icon.png" alt="Money-back" width={43.95} height={43.75} />
@@ -102,8 +106,10 @@ free product protection.
 
         </div>
         </div>
+        </Link>
 
         {/* Secure Payment */}
+        <Link href="/contact-us"> 
         <div style={{ marginLeft: '10px' }}>
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/secure-payment-icon.png" alt="Secure Payment" width={39.62} height={34.94} />
@@ -142,8 +148,10 @@ Highly Secured Payment Gateway
 
         </div>
         </div>
+        </Link>
 
         {/* Free Shipping */}
+        <Link href="/contact-us"> 
         <div style={{ marginLeft: '10px' }}>
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/free-shipping-icon.png" alt="Free Shipping" width={44.39} height={31.37} />
@@ -181,6 +189,7 @@ Complimentary delivery on every <br/>single order.
 
         </div>
         </div>
+        </Link>
 
       </div>
     </div>

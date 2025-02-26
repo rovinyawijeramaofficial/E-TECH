@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 import LatestOffersCard from './LatestOffersCard'; // Import LatestOffersCard
 
 const Computing = () => {
@@ -85,6 +86,7 @@ const Computing = () => {
       100% Genuine Products.
       </p>
       
+      <Link href="/product">  
       <button className='mt-16'
         style={{
           width: "241px", // Updated width
@@ -108,7 +110,7 @@ const Computing = () => {
       >
         SHOP NOW
       </button>
-      
+      </Link>
       </div>
 
       <div className='-mt-5'
