@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 import LatestOffersCard from './LatestOffersCard'; // Import LatestOffersCard
 
 const Mobile = () => {
@@ -115,6 +116,7 @@ Discover The Latest In Mobile Technology!<br/>
 100% Genuine Products.
 </p>
 
+<Link href="/product">   
 <button className='mt-16'
   style={{
     width: "241px", // Updated width
@@ -138,6 +140,7 @@ Discover The Latest In Mobile Technology!<br/>
 >
   SHOP NOW
 </button>
+</Link>
 
 </div>
     </div>
