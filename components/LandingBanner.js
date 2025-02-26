@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const LandingBanner = () => {
   return (
@@ -16,49 +17,64 @@ const LandingBanner = () => {
 
         {/* Product Names */}
         <div className="absolute z-20 flex flex-col items-start" style={{ top: "10%", left: "8%" }}>
-          <div
-            style={{
-              width: "164px",
-              height: "19px",
-              fontFamily: "Kanit",
-              fontWeight: 275,
-              fontSize: "16px",
-              lineHeight: "19.2px",
-              letterSpacing: "10%",
-              color: "#D9D9D9", // Less bright white
-              marginBottom: "10px",
-            }}
-          >
-            OSMO POCKET 3
-          </div>
-          <div
-            style={{
-              width: "164px",
-              height: "19px",
-              fontFamily: "Kanit",
-              fontWeight: 700,
-              fontSize: "16px",
-              lineHeight: "19.2px",
-              letterSpacing: "10%",
-              color: "#FEFEFF",
-              marginBottom: "10px",
-            }}
-          >
-            DJI RS 4 PRO
-          </div>
-          <div
-            style={{
-              fontFamily: "Kanit",
-              fontWeight: 275,
-              fontSize: "16px",
-              lineHeight: "19.2px",
-              letterSpacing: "10%",
-              color: "#D9D9D9", // Less bright white
-            }}
-          >
-            IPHONE 15 PRO
-          </div>
+
+<div
+  style={{
+    width: "164px",
+    height: "19px",
+    fontFamily: "Kanit",
+    fontWeight: 275,
+    fontSize: "16px",
+    lineHeight: "19.2px",
+    letterSpacing: "10%",
+    color: "#D9D9D9", // Less bright white
+    marginBottom: "10px",
+    cursor: "pointer", // Makes it look clickable
+  }}
+>
+  <Link href="/product" style={{ textDecoration: "none", color: "inherit" }}>
+    OSMO POCKET 3
+  </Link>
+</div>
+
+<div
+  style={{
+    width: "164px",
+    height: "19px",
+    fontFamily: "Kanit",
+    fontWeight: 700,
+    fontSize: "16px",
+    lineHeight: "19.2px",
+    letterSpacing: "10%",
+    color: "#FEFEFF",
+    marginBottom: "10px",
+    cursor: "pointer",
+  }}
+>
+  <Link href="/product" style={{ textDecoration: "none", color: "inherit" }}>
+    DJI RS 4 PRO
+  </Link>
+</div>
+
+<div
+  style={{
+    fontFamily: "Kanit",
+    fontWeight: 275,
+    fontSize: "16px",
+    lineHeight: "19.2px",
+    letterSpacing: "10%",
+    color: "#D9D9D9", // Less bright white
+    cursor: "pointer",
+  }}
+>
+  <Link href="/product" style={{ textDecoration: "none", color: "inherit" }}>
+    IPHONE 15 PRO
+  </Link>
+</div>
+
+          
         </div>
+        
 
         {/* Slide Navigator (Vertical Bar) */}
         <div
@@ -77,14 +93,18 @@ const LandingBanner = () => {
 {/* Left and Right Arrows */}
 <div className="absolute top-1/2 left-0 right-0 flex justify-between items-center px-8 z-20">
   {/* Left Arrow */}
+  <Link href="/product">
   <button className="bg-transparent p-2 flex items-center">
     <Image src="/images/left-arrow.png" alt="Previous" width={20} height={20} className="h-8 w-auto" />
   </button>
+  </Link>
 
   {/* Right Arrow */}
+  <Link href="/product">
   <button className="bg-transparent p-2 flex items-center">
     <Image src="/images/right-arrow.png" alt="Next" width={20} height={20} className="h-8 w-auto" />
   </button>
+  </Link>
 </div>
 
 
@@ -171,7 +191,10 @@ const LandingBanner = () => {
             lineHeight: "24px" 
             }}
             >
+              <Link href="/singleproduct/[id]">
               BUY NOW
+              </Link>
+
             </button>
           <button className="bg-transparent border border-white text-white px-8 py-3 " 
           style={{ 
@@ -181,7 +204,9 @@ const LandingBanner = () => {
             lineHeight: "24px" 
             }}
             >
+              <Link href="/about-us">
             LEARN MORE
+            </Link>
             </button>
         </div>
       </div>
