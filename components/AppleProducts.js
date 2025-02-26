@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from "next/link";
 
 const AppleProducts = () => {
   return (
@@ -96,6 +97,8 @@ const AppleProducts = () => {
 </p>
 
 <br/><br/>
+
+<Link href="/product">          
 <button 
   style={{
     width: "241px", // Updated width
@@ -118,6 +121,8 @@ const AppleProducts = () => {
 >
   SHOP NOW
 </button>
+</Link>
+
 <br/><br/>
       </div>
     </div>
