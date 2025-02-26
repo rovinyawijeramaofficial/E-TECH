@@ -1,7 +1,5 @@
 import { useState } from "react";
 import Image from 'next/image';
-import { FaWhatsapp } from 'react-icons/fa';
-import { MdLocationOn } from 'react-icons/md';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
