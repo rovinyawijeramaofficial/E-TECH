@@ -1,21 +1,28 @@
 // pages/about-us.js
 
 import React from 'react';
-import Image from 'next/image'; // Import Image component
+import Image from 'next/image';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import AboutUsIconBar from "@/components/AboutUsIconBar";
 
 const AboutUs = () => {
   return (
-    <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px 20px', maxWidth: '1200px', margin: '0 auto' }}>
-      {/* Hero Image */}
+    <>
+        <Header />
+        {/* Hero Image */}
       <div style={{ marginBottom: '40px' }}>
         <Image
-          src="/images/about-us-building.jpg" // Replace with your image path
+          src="/images/aboutus_banner.png" // Replace with your image path
           alt="About Us Building"
-          width={1200} // Adjust as needed
-          height={600} // Adjust as needed
+          width={1728} // Adjust as needed
+          height={748} // Adjust as needed
           layout="responsive"
         />
       </div>
+
+    <div style={{ fontFamily: 'Arial, sans-serif', padding: '40px 20px', maxWidth: '1200px', margin: '0 auto' }}>
+      
 
       {/* Statistics Section */}
       <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '40px' }}>
@@ -82,26 +89,15 @@ const AboutUs = () => {
       </section>
 
       {/* Icon Bar Section */}
-      <div style={{ display: 'flex', justifyContent: 'space-around', backgroundColor: '#f9f9f9', padding: '40px 20px' }}>
-        {/* Replace with your IconBar component if you have one */}
-        <div>
-          <Image src="/images/shield-icon.png" alt="Extended Protection" width={40} height={40} />
-          <p>Extended Protection</p>
-        </div>
-        <div>
-          <Image src="/images/money-back-icon.png" alt="Money-back" width={40} height={40} />
-          <p>Money-back</p>
-        </div>
-        <div>
-          <Image src="/images/secure-payment-icon.png" alt="Secure Payment" width={40} height={40} />
-          <p>Secure Payment</p>
-        </div>
-        <div>
-          <Image src="/images/free-shipping-icon.png" alt="Free Shipping" width={40} height={40} />
-          <p>Free Shipping</p>
-        </div>
+      
+      <div style={{ 
+        marginLeft:"-150px"}}>
+        <AboutUsIconBar/>
       </div>
     </div>
+
+<Footer/>
+</>
   );
 };
 
