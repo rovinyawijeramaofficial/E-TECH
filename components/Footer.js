@@ -28,7 +28,7 @@ const Footer = () => {
     lineHeight: "16.8px",
     letterSpacing: "10%",
     color: "#FEFEFF",
-    marginLeft:"738px"
+    marginLeft:"764px"
   }}
 >
   Get The Latest Update On New Items And Offers...
@@ -39,6 +39,7 @@ const Footer = () => {
       <div
       style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center', gap: '110px' }}>
       
+      <Link href="/landing" >
       <h2 className='-mt-10'
   style={{
     width: "155px",
@@ -54,7 +55,8 @@ const Footer = () => {
   }}
 >
   E-TECH
-</h2>     
+</h2>    
+</Link> 
         
 <input className='-mt-10'
   type="email" 
@@ -127,11 +129,25 @@ const Footer = () => {
             letterSpacing: "10%",
             color: "#FEFEFF",
               }}> 
+              
+              <Link href="/product">
           <li>SHOP</li>
+          </Link>
+          <Link href="/product">
             <li>MOBILE</li>
+            </Link>
+
+            <Link href="/product">
             <li>COMPUTING</li>
+            </Link>
+
+            <Link href="/product">
             <li>CAMERA</li>
+            </Link>
+
+            <Link href="/product">
             <li>ACCESSORIES</li>
+            </Link>
           </ul>
         </div>
 
@@ -148,9 +164,10 @@ const Footer = () => {
             letterSpacing: "10%",
             color: "#FEFEFF",
               }}> 
-            <li>TERMS & CONDITIONS</li>
-            <li>PRIVACY & POLICY</li>
-            <li>CUSTOMER SERVICE</li>
+
+            <Link href="/about-us" passHref><li>TERMS & CONDITIONS</li></Link>
+            <Link href="/about-us" passHref><li>PRIVACY & POLICY</li></Link>
+            <Link href="/contact-us" passHref><li>CUSTOMER SERVICE</li></Link>
             <Link href="/contact-us" passHref><li style={{ cursor: 'pointer' }}>CONTACT US</li></Link>
             <Link href="/about-us" passHref><li style={{ cursor: 'pointer' }}>ABOUT US</li></Link>
           </ul>
@@ -179,9 +196,9 @@ const Footer = () => {
             marginBottom: '30px' 
           }}
            >
-            <Image src="/images/instagram.png" alt="Instagram" width={25} height={25} />
-            <Image src="/images/whatsapp.png" alt="WhatsApp" width={25} height={25} />
-            <Image src="/images/facebook.png" alt="Facebook" width={25} height={25} />
+            <Link href="/contact-us" passHref><Image src="/images/instagram.png" alt="Instagram" width={25} height={25} /></Link>
+            <Link href="/contact-us" passHref><Image src="/images/whatsapp.png" alt="WhatsApp" width={25} height={25} /></Link>
+            <Link href="/contact-us" passHref><Image src="/images/facebook.png" alt="Facebook" width={25} height={25} /></Link>
           </div>
           
           <h3 className='-mt-5'
@@ -199,7 +216,7 @@ const Footer = () => {
               PAYMENT METHODS
               </h3>
             <div className='mt-4'>
-            <Image src="/images/payment methods.png" alt="Visa" width={203.74} height={36} />
+            <Link href="/contact-us" passHref><Image src="/images/payment methods.png" alt="Visa" width={203.74} height={36} /></Link>
             </div>
         </div>
 
@@ -208,6 +225,7 @@ const Footer = () => {
 <div style={{ marginLeft: "80px", display: "flex", flexDirection: "column", gap: "30px" }}>
   
  {/* Location */}
+ <Link href="/contact-us" passHref>
 <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
   <Image src="/images/map-marker-Regular.png" alt="Location" width={25} height={25} />
   <div>
@@ -232,9 +250,11 @@ const Footer = () => {
     }}>Address Line 2, Colombo</p>
   </div>
 </div>
+</Link>
 
 
   {/* Email */}
+  <Link href="/contact-us" passHref>
   <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
     <Image src="/images/envelope-Regular.png" alt="Email" width={25} height={25} />
     <div>
@@ -259,8 +279,10 @@ const Footer = () => {
       }}>info@etech.lk</p>
     </div>
   </div>
+  </Link>
 
   {/* Phone */}
+  <Link href="/contact-us" passHref>
   <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
     <Image src="/images/phone-Regular.png" alt="Phone" width={25} height={25} />
     <div>
@@ -281,6 +303,7 @@ const Footer = () => {
       }}>+94 56 345 862</p>
     </div>
   </div>
+  </Link>
 
 </div>
 
