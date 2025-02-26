@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const ProductPage = () => {
   // Sample product data
@@ -96,6 +98,8 @@ const ProductPage = () => {
     });
 
   return (
+     <>
+            <Header />
     <div style={{ display: 'flex', fontFamily: 'Arial, sans-serif' }}>
       {/* Sidebar (Filters) */}
       <aside style={{ width: '250px', padding: '20px', borderRight: '1px solid #ddd' }}>
@@ -207,6 +211,9 @@ const ProductPage = () => {
         )}
       </main>
     </div>
+
+    <Footer/>
+</>
   );
 };
 
