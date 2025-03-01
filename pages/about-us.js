@@ -25,68 +25,291 @@ const AboutUs = () => {
       
 
       {/* Statistics Section */}
-      <div style={{ display: 'flex', justifyContent: 'space-around', marginBottom: '40px' }}>
-        <div>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>150+</h2>
-          <p>PRODUCTS</p>
+      <div style={{ display: 'flex', marginBottom: '40px' }}>
+
+        <div 
+        style={{
+          marginLeft:"-80px",
+           width: "219px",
+        }} >
+        <h2 style={{
+  height: "24px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "20px",
+  lineHeight: "24px",
+  letterSpacing: "10%",
+  color: "#434250",
+}}>
+  PRODUCTS
+</h2>
+<p style={{
+  height: "115px",
+  fontFamily: "Kanit",
+  fontWeight: 500,
+  fontSize: "96px",
+  lineHeight: "115.2px",
+  letterSpacing: "10%",
+  color: "#989EF1",
+}}>
+  150+
+</p>
         </div>
-        <div>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>$10K+</h2>
-          <p>SALES</p>
+
+<div className='mx-6'></div>
+
+        <div className='mx-36'
+        tyle={{width: "294px"
+        }}>
+        <h2 style={{
+  height: "24px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "20px",
+  lineHeight: "24px",
+  letterSpacing: "10%",
+  color: "#434250",
+}}>SALES</h2>
+          <p style={{
+  height: "115px",
+  fontFamily: "Kanit",
+  fontWeight: 500,
+  fontSize: "96px",
+  lineHeight: "115.2px",
+  letterSpacing: "10%",
+  color: "#989EF1"
+}}>$10K+</p>
         </div>
-        <div>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>6K+</h2>
-          <p>DAILY VISITORS</p>
+
+        <div className='-mx-9'></div>
+
+        <div 
+        style={{width: "182px",
+ marginLeft:"130px"
+        }}>
+        <h2 style={{
+  height: "24px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "20px",
+  lineHeight: "24px",
+  letterSpacing: "10%",
+  color: "#434250", 
+}}>DAILY VISITORS</h2>
+          <p style={{
+  height: "115px",
+  fontFamily: "Kanit",
+  fontWeight: 500,
+  fontSize: "96px",
+  lineHeight: "115.2px",
+  letterSpacing: "10%",
+  color: "#989EF1"
+}}>6K+</p>
         </div>
-        <div>
-          <h2 style={{ fontSize: '2rem', fontWeight: 'bold' }}>15</h2>
-          <p>OUTLETS</p>
+
+        <div className='-mx-6'></div>
+        <div
+        style={{width: "95px",
+          marginLeft:"245px"
+        }}>
+        <h2 style={{
+  height: "24px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "20px",
+  lineHeight: "24px",
+  letterSpacing: "10%",
+  color: "#434250",
+}}>OUTLETS</h2>
+          <p style={{
+  height: "115px",
+  fontFamily: "Kanit",
+  fontWeight: 500,
+  fontSize: "96px",
+  lineHeight: "115.2px",
+  letterSpacing: "10%",
+  color: "#989EF1"
+}}>15</p>
         </div>
       </div>
 
+<br/>
       {/* How it All Started Section */}
-      <section style={{ marginBottom: '40px' }}>
-        <h2>How it All Started</h2>
-        <p>
-          In 2015, we founded [Your Company Name] because we wanted a better way to share experiences. We'd been searching for a [product/service] that we could show us to share great moments with people anywhere in the world - not just snapshots of a journey, but the experience itself. When we couldn't find the right gear to realize this vision, we decided to build it ourselves.
-        </p>
+      <section 
+      style={{ marginBottom: '100px', marginLeft:"-80px"}}>
+      <h2 style={{
+  width: "1488px",
+  height: "31px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "26px",
+  lineHeight: "31.2px",
+  letterSpacing: "10%",
+  color: "#989EF1"
+}}>
+  How It All Started
+</h2>
+
+    <div className='mt-3'></div>   
+
+<p style={{
+  width: "1100px",
+  height: "112px",
+  fontFamily: "Kanit",
+  fontWeight: 275,
+  fontSize: "23px",
+  lineHeight: "27.6px",
+  letterSpacing: "10%",
+  color: "#434250"
+}}>
+  In 2015, we founded Insta360 because we wanted a better way to share experiences. We’d been searching for a 360 camera that would allow us to share great moments with people anywhere in the world — not just snapshots or partial glimpses, but full, immersive moments. When we couldn’t find the right gear to realize this vision, we decided to build it ourselves. We haven’t stopped building since.
+</p>
       </section>
 
-      {/* Vision Section */}
-      <section style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-        <div style={{ flex: 1 }}>
-          <h2>VISION</h2>
-          <p>
-            In 2015, we founded [Your Company Name] because we wanted a better way to share experiences. We'd been searching for a [product/service] that would allow us to share great moments with people anywhere in the world - not just snapshots of a journey, but the experience itself. When we couldn't find the right gear to realize this vision, we decided to build it ourselves.
-          </p>
-        </div>
-        <div style={{ flex: 0.5, textAlign: 'center' }}>
-          <Image
-            src="/images/vision-icon.png" // Replace with your vision icon path
-            alt="Vision Icon"
-            width={100} // Adjust as needed
-            height={100} // Adjust as needed
-          />
-        </div>
-      </section>
+
+{/* Vision Section */}
+<section style={{ 
+  marginBottom: '120px', 
+  display: 'flex', 
+  alignItems: 'center', 
+  justifyContent: 'space-between',
+  marginLeft: "-80px" 
+}}>
+  <div style={{ flex: 1, maxWidth: '90%' }}>
+    <h2 style={{
+      width: "1488px",
+      height: "31px",
+      fontFamily: "Kanit",
+      fontWeight: 600,
+      fontSize: "26px",
+      lineHeight: "31.2px",
+      letterSpacing: "10%",
+      color: "#989EF1"
+    }}>
+      VISION
+    </h2>
+    
+      <div style={{ marginTop: '12px' }}></div> {/* Replaced className='mt-3' with inline style */}
+    <p style={{
+      width: "800px",
+      height: "140px",
+      fontFamily: "Kanit",
+      fontWeight: 275,
+      fontSize: "23px",
+      lineHeight: "27.6px",
+      letterSpacing: "10%",
+      color: "#434250"
+    }}>
+      In 2015, we founded Insta360 because we wanted a better way to share experiences. We’d been searching for a 360 camera that would allow us to share great moments with people anywhere in the world — not just snapshots or partial glimpses, but full, immersive moments. When we couldn’t find the right gear to realize this vision, we decided to build it ourselves. We haven’t stopped building since.
+    </p>
+  </div>
+  
+  <div style={{ flex: 0.4, textAlign: 'right' }}>
+    <div style={{
+      width: "322px",
+      height: "322px",
+      backgroundColor: "#F4F4FC",
+      borderRadius: "50%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "relative",
+      marginLeft:"-117px"
+    }}>
+      <div style={{
+        backgroundColor: "#D1D4FA",
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        <Image
+          src="/images/vision-icon.png" // Update with correct path
+          alt="Vision Icon"
+          width={322}
+          height={322}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Mission Section */}
-      <section style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
-        <div style={{ flex: 0.5, textAlign: 'center' }}>
-          <Image
-            src="/images/mission-icon.png" // Replace with your mission icon path
-            alt="Mission Icon"
-            width={100} // Adjust as needed
-            height={100} // Adjust as needed
-          />
-        </div>
-        <div style={{ flex: 1 }}>
-          <h2>MISSION</h2>
-          <p>
-            In 2015, we founded [Your Company Name] because we wanted a better way to share experiences. We'd been searching for a [product/service] that would allow us to share great moments with people anywhere in the world - not just snapshots of a journey, but the experience itself. When we couldn't find the right gear to realize this vision, we decided to build it ourselves.
-          </p>
-        </div>
-      </section>
+<section style={{ 
+  marginBottom: '120px', 
+  display: 'flex', 
+  alignItems: 'center', 
+  justifyContent: 'space-between',
+  marginLeft: "-80px" 
+}}>
+  <div style={{ flex: 0.5, maxWidth: '90%' }}>
+    <h2 style={{
+      width: "1488px",
+      height: "31px",
+      fontFamily: "Kanit",
+      fontWeight: 600,
+      fontSize: "26px",
+      lineHeight: "31.2px",
+      letterSpacing: "10%",
+      color: "#989EF1",
+      marginLeft: "480px" 
+    }}>
+      MISSION
+    </h2>
+    
+      <div style={{ marginTop: '12px' }}></div> {/* Replaced className='mt-3' with inline style */}
+    <p style={{
+      width: "800px",
+      height: "140px",
+      fontFamily: "Kanit",
+      fontWeight: 275,
+      fontSize: "23px",
+      lineHeight: "27.6px",
+      letterSpacing: "10%",
+      color: "#434250",
+       marginLeft: "480px" 
+    }}>
+      In 2015, we founded Insta360 because we wanted a better way to share experiences. We’d been searching for a 360 camera that would allow us to share great moments with people anywhere in the world — not just snapshots or partial glimpses, but full, immersive moments. When we couldn’t find the right gear to realize this vision, we decided to build it ourselves. We haven’t stopped building since.
+    </p>
+  </div>
+  
+  <div style={{ flex: 0.4, textAlign: 'left' }}>
+    <div style={{
+      width: "322px",
+      height: "322px",
+      backgroundColor: "#F4F4FC",
+      borderRadius: "50%",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      position: "relative",
+      marginLeft:"-1240px"
+    }}>
+      <div style={{
+        backgroundColor: "#D1D4FA",
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}>
+        <Image
+         src="/images/mission-icon.png" // Update with correct path
+          alt="Vision Icon"
+          width={322}
+          height={322}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+      
+<hr style={{ 
+  border: '2px solid #989EF1',
+   width: "1328px",
+    marginLeft:"-80px"
+ }} />
+
 
       {/* Icon Bar Section */}
       
@@ -94,6 +317,14 @@ const AboutUs = () => {
         marginLeft:"-150px"}}>
         <AboutUsIconBar/>
       </div>
+
+      <hr style={{ 
+  border: '2px solid #989EF1',
+   width: "1328px",
+    marginLeft:"-80px"
+ }} />
+
+ <br/> <br/>
     </div>
 
 <Footer/>
