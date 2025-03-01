@@ -28,17 +28,17 @@ const AboutUsIconBar = () => {
         <div style={{ textAlign: 'center', maxWidth: '202px' }}>
           <Image src="/images/aboutus_shield-icon.png" alt="Extended Protection" width={31.25} height={39.46} />
           
-          <h3 className='mt-3' 
+          <h3 className='mt-9' 
   style={{
-    width: "202px",
-    height: "22px",
+    width: "225px",
+    height: "24px",
     fontFamily: "Kanit",
     fontWeight: 600,
-    fontSize: "18px",
-    lineHeight: "21.6px",
+    fontSize: "20px",
+    lineHeight: "24px",
     letterSpacing: "10%",
-    color: "#434250",
-    marginLeft: "-90px"
+    color: "#989EF1",
+    marginLeft: "-98px"
   }}
 >
   Extended Protection
@@ -71,17 +71,17 @@ free product protection.
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/aboutus_money-back-icon.png" alt="Money-back" width={43.95} height={43.75} />
           
-          <h3 className='mt-3' 
+          <h3 className='mt-9' 
   style={{
-    width: "122px",
-    height: "22px",
+    width: "130px",
+    height: "24px",
     fontFamily: "Kanit",
     fontWeight: 600,
-    fontSize: "18px",
-    lineHeight: "21.6px",
+    fontSize: "20px",
+    lineHeight: "24px",
     letterSpacing: "10%",
-    color: "#434250",
-    marginLeft: "-40px"
+    color: "#989EF1",
+    marginLeft: "-48px"
   }}
 >
   Money-back
@@ -113,17 +113,17 @@ free product protection.
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/aboutus_secure-payment-icon.png" alt="Secure Payment" width={39.62} height={34.94} />
           
-          <h3 className='mt-3' 
+          <h3 className='mt-9' 
   style={{
-    width: "159px",
-    height: "22px",
+    width: "175px",
+    height: "24px",
     fontFamily: "Kanit",
     fontWeight: 600,
-    fontSize: "18px",
-    lineHeight: "21.6px",
+    fontSize: "20px",
+    lineHeight: "24px",
     letterSpacing: "10%",
-    color: "#434250",
-    marginLeft: "-65px"
+    color: "#989EF1",
+    marginLeft: "-48px"
   }}
 >
 Secure Payment
@@ -155,16 +155,16 @@ Highly Secured Payment Gateway
         <div style={{ textAlign: 'center', maxWidth: '200px' }}>
           <Image src="/images/aboutus_free-shipping-icon.png" alt="Free Shipping" width={44.39} height={31.37} />
           
-          <h3 className='mt-3' 
+          <h3 className='mt-9' 
   style={{
-    width: "135px",
-    height: "22px",
+    width: "150px",
+    height: "24px",
     fontFamily: "Kanit",
     fontWeight: 600,
-    fontSize: "18px",
-    lineHeight: "21.6px",
+    fontSize: "20px",
+    lineHeight: "24px",
     letterSpacing: "10%",
-    color: "#434250",
+    color: "#989EF1",
     marginLeft: "-48px"
   }}
 >
