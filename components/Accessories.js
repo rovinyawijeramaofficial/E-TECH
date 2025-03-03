@@ -36,13 +36,12 @@ const Computing = () => {
     <div className='-mt-4'
     style={{ display: 'flex', justifyContent: 'space-between',gap:"0px", padding: '1.0999px', maxWidth: '1215px', marginLeft: "130px" }}>
       {/* Left Section */}
-      <div className='mt-6'
+      <div className='mt-6  bg-[#FEFEFF] shadow-lg'
       style={{ 
         width: '735px', 
         height:"844.5px",
         backgroundColor: '#FEFEFF', // Updated background color
         padding: '60px', // Adjusted padding
-        borderRadius: '8px', 
         marginLeft:"-30px"
       }}>
         <div className='mt-36'
