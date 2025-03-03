@@ -5,7 +5,7 @@ export default function LatestOffersCard({ product }) {
   const { image, title, brand, oldPrice, newPrice, rating, reviews, offerEnd, Id } = product;
 
   return (
-    <div className="w-[312px] h-[844.5px] bg-[#FEFEFF] rounded-xl shadow-lg flex flex-col justify-between text-center mt-6"
+    <div className="w-[312px] h-[844.5px] bg-[#FEFEFF] shadow-lg flex flex-col justify-between text-center mt-6"
     style={{
       gap:"30px",
       padding:"30px"
