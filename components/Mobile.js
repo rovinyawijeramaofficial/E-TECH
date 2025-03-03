@@ -45,13 +45,12 @@ const Mobile = () => {
       </div>
 
       {/* Right Section */}
-<div className='mt-6'
+<div className="bg-[#FEFEFF] shadow-lg mt-6"
 style={{ 
   width: '738px', 
   height:"844.5px",
   backgroundColor: '#FEFEFF', // Updated background color
-  padding: '60px', // Adjusted padding
-  borderRadius: '8px', 
+  padding: '60px', // Adjusted padding 
   gap:"15px",
   marginLeft:"15px"
 }}>
