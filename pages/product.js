@@ -152,7 +152,7 @@ const ProductPage = () => {
       colors: ['Green', 'Silver'],
       brand: 'Samsung',
       category: 'Mobile',
-      oldPrice: "350,000", newPrice: "300,000",
+      oldPrice: "30,000", newPrice: "10,000",
       offerEnd: "25th of August",
     },
     {
