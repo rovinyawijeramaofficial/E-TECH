@@ -49,13 +49,12 @@ const Mobile = () => {
       </div>
 
       {/* Right Section */}
-<div className='-mt-3'
+<div className='-mt-3  bg-[#FEFEFF] shadow-lg'
 style={{ 
   width: '738px', 
   height:"844.5px",
   backgroundColor: '#FEFEFF', // Updated background color
   padding: '60px', // Adjusted padding
-  borderRadius: '8px', 
   gap:"15px",
   marginLeft:"15px"
 }}>
