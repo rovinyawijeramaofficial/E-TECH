@@ -49,23 +49,33 @@ export default function SingleProductRecommendedProducts() {
       <div className="container mx-auto px-10 md:px-28 mt-12 relative">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-6">
-        <h2 
-  style={{
-    width: "292px",
-    height: "28px",
-    fontFamily: "Kanit",
-    fontWeight: 600,
-    fontSize: "23px",
-    lineHeight: "27.6px",
-    letterSpacing: "10%",
-    color: "#434250"
-  }}
->
-Recommended Products
+       
+             {/* Section Title */}
+      <h2 style={{
+  width: "301px",
+  height: "28px",
+  fontFamily: "Kanit",
+  fontWeight: 600,
+  fontSize: "23px",
+  lineHeight: "27.6px",
+  letterSpacing: "10%",
+  color: "#989EF1",
+  marginLeft: "-40px",
+  marginBottom: "30px", // Retained from original code
+  paddingBottom: "10px", // Retained from original code
+  width: "fit-content" // Retained from original code
+}}>
+  RECOMMENDED PRODUCTS
 </h2>
 
         </div>
 
+        <hr className="-mt-6"
+style={{ border: '2px solid #989EF1',
+    width: "1387px",
+    marginLeft: "-40px",
+    marginBottom: "60px",
+ }} />
         {/* Swiper with Navigation & Pagination */}
         <div className="relative w-full overflow-visible">
           {/* Left Arrow */}
