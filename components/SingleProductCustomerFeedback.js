@@ -29,7 +29,7 @@ const SingleProductCustomerFeedback = () => {
   return (
     <div style={{
         width: "1727px",
-        padding: "100px 120px", // Added padding
+        padding: "60px 120px", // Added padding
         gap: "60px", // Added gap
 
       }}>
