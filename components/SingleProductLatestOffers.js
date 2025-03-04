@@ -46,9 +46,10 @@ export default function SingleProductLatestOffers() {
 
   return (
     <section className="py-10">
-      <div className="container mx-auto px-10 md:px-28 mt-12 relative">
+      <div className="container mx-auto px-10 md:px-28 mt-5 relative">
         {/* Section Header */}
         <div className="flex justify-between items-center mb-6">
+
         <h2 
   style={{
     width: "192px",
@@ -56,15 +57,16 @@ export default function SingleProductLatestOffers() {
     fontFamily: "Kanit",
     fontWeight: 600,
     fontSize: "23px",
+    marginLeft: "-17px",
     lineHeight: "27.6px",
     letterSpacing: "10%",
-    color: "#434250"
+    color: "#989EF1",
   }}
 >
   LATEST OFFERS
 </h2>
 
-<a 
+<a className="-mx-16"
   href="/product" 
   style={{
     width: "156px",
@@ -74,20 +76,32 @@ export default function SingleProductLatestOffers() {
     fontSize: "18px",
     lineHeight: "21.6px",
     letterSpacing: "10%",
-    color: "#434250",
+    color: "#989EF1",
     textDecoration: "none",
     display: "inline-flex", // Use inline-flex for easy alignment
     alignItems: "center" // Vertically align items
   }}
 >
   SEE ALL OFFERS
-  <img 
-    src="/images/seealloffersarrrow.png" 
-    alt="See All Offers Arrow" 
-    style={{ marginLeft: "5px" }} // Add some spacing between text and arrow
-  />
+  <span className="-mt-2.5"
+  style={{
+  width: '5px',
+  height: '10px',
+  position: 'relative', // Needed for top and left positioning
+  left: '10.06px',
+  color: '#989EF1' // Added color to match the border and fill
+}}>
+  &gt;
+</span>
 </a>
         </div>
+
+        <hr className="mt-4"
+style={{ border: '2px solid #989EF1',
+    width: "1387px",
+    marginLeft: "-17px",
+    marginBottom: "60px",
+ }} />
 
         {/* Swiper with Navigation & Pagination */}
         <div className="relative w-full overflow-visible">
@@ -157,7 +171,7 @@ export default function SingleProductLatestOffers() {
     </button>
   ))}
 </div>
-<br/>
+<br/><br/>
       </div>
     </section>
   );
